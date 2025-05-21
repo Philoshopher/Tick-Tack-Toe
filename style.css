@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --BGcolor: #505168;
+  --FGcolor: #27233a;
+  --circle: #61d095;
+  --cross: #f06543;
+}
+body {
+  background: var(--BGcolor);
+}
+h1 {
+  color: var(--FGcolor);
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px;
+}
+.box {
+  height: 50px;
+  width: 50px;
+  background-color: var(--circle);
+}
