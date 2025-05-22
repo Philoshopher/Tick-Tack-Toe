@@ -50,11 +50,6 @@ main {
   border-radius: 0.5rem;
   border: none;
 }
-.box:hover {
-  font-size: 6rem;
-  border-radius: 1rem;
-}
-
 .reset-btn {
   font-family: var(--FontFamily);
   height: 10vmin;
@@ -63,4 +58,13 @@ main {
   border-radius: 1rem;
   color: whitesmoke;
   background-color: #333;
+  margin-bottom: 2rem;
+}
+.cross {
+  background-color: var(--cross);
+  color: var(--FONT);
+}
+.circle {
+  color: var(--FONT);
+  background-color: var(--circle);
 }
