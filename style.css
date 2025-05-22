@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
 }
+
 :root {
-  --BGcolor: #27233a;
-  --FGcolor: #505168;
+  --BGcolor: #f2edeb;
+  --FGcolor: #fabc2a;
   --circle: #61d095;
-  --cross: #f06543;
-  --FONT: whitesmoke;
+  --cross: #f05365;
+  --FONT: #333;
+  --FontFamily: 'Ubuntu', sans-serif;
 }
 body {
   background: var(--BGcolor);
@@ -16,11 +20,14 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10vh;
+  gap: 10vmin;
 }
 
 h1 {
+  font-family: var(--FontFamily);
+  font-size: 5rem;
   color: var(--FONT);
+  text-shadow: 0px 0px 50px aliceblue;
 }
 main {
   height: 70vmin;
@@ -31,25 +38,29 @@ main {
   flex-wrap: wrap;
   gap: 1rem;
 }
-.reset-btn {
-  height: 10vmin;
-  width: 70vmin;
-  font-size: 2rem;
-  border-radius: 1rem;
-  color: var(--FONT);
-  background-color: var(--FGcolor);
-}
+
 .box {
-  display: block;
+  font-family: var(--FontFamily);
   justify-content: center;
-  text-align: center;
-  font-size: 5rem;
+  align-self: center;
+  font-size: 10vmin;
   height: 20vmin;
   width: 20vmin;
-  background-color: var(--FGcolor);
+  background-color: white;
   border-radius: 0.5rem;
+  border: none;
 }
 .box:hover {
   font-size: 6rem;
   border-radius: 1rem;
+}
+
+.reset-btn {
+  font-family: var(--FontFamily);
+  height: 10vmin;
+  width: 70vmin;
+  font-size: 2rem;
+  border-radius: 1rem;
+  color: whitesmoke;
+  background-color: #333;
 }
