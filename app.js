@@ -1,5 +1,6 @@
 // DOM elemrnts
 let boxes = document.querySelectorAll('.box');
+let reset = document.querySelector('.reset-btn');
 
 const wPatterns = [
   [0, 1, 2],
@@ -25,5 +26,15 @@ boxes.forEach((box) => {
       box.classList.add('cross');
     }
     box.disabled = true;
+  });
+});
+
+reset.addEventListener('click', () => {
+  boxes.forEach((box) => {
+    box.innerText = '';
+    box.classList.remove('circle');
+    box.classList.remove('cross');
+    box.disabled = false;
+    player = true;
   });
 });
