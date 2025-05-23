@@ -19,15 +19,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 10vmin;
 }
 
 h1 {
   font-family: var(--FontFamily);
-  font-size: 5rem;
+  font-size: 10vw;
   color: var(--FONT);
-  text-shadow: 0px 0px 50px aliceblue;
+  white-space: nowrap;
+  flex-shrink: 1;
 }
 main {
   height: 70vmin;
@@ -63,8 +64,24 @@ main {
 .cross {
   background-color: var(--cross);
   color: var(--FONT);
+  box-shadow: 0 4px 12px #333;
 }
 .circle {
   color: var(--FONT);
   background-color: var(--circle);
+  box-shadow: 0 4px 12px #333;
+}
+.msg {
+  font-family: var(--FontFamily);
+  font-size: 2rem;
+  color: var(--FGcolor);
+  text-shadow: 0 0 10px #333;
+  white-space: nowrap;
+}
+.hide {
+  display: none;
+}
+.playAgain {
+  background-color: var(--FGcolor);
+  color: #333;
 }
