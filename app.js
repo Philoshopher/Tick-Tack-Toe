@@ -34,6 +34,7 @@ boxes.forEach((box) => {
 
 reset.addEventListener('click', () => {
   boxes.forEach((box) => {
+    reset.innerText = 'Restart';
     box.innerText = '';
     msg.innerHTML = ``;
     box.classList.remove('circle');

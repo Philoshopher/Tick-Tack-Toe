@@ -75,7 +75,6 @@ main {
   font-family: var(--FontFamily);
   font-size: 2rem;
   color: var(--FGcolor);
-  text-shadow: 0 0 10px #333;
   white-space: nowrap;
 }
 .hide {
